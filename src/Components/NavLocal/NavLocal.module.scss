@@ -1,0 +1,14 @@
+.navLocal {
+  margin: 10px 0 20px 0;
+  .navItem {
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2px 0;
+  }
+  .activeLink {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    color: #6a6a6a;
+  }
+}

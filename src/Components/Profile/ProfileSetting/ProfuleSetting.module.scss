@@ -1,0 +1,27 @@
+.setting {
+  font-family: 'Forums', cursive;
+  .item {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius:  20px;
+    padding: 5px;
+    margin: 15px 0;
+    background: #fffff5;
+    span, .passChange {
+      cursor: pointer;
+      color: #7A7A78;
+      &:hover {
+        color: #c71919;
+      }
+    }
+    .passChange {
+      text-align: center;
+    }
+  }
+  .logout {
+    text-align: center;
+    margin: 20px 0 40px 0;
+    button {
+      width: 100px;
+    }
+  }
+}

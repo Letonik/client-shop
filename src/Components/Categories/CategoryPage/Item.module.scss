@@ -1,0 +1,24 @@
+.body{
+  font-family: 'Forums', cursive;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  &:hover {
+    color: #a3742e;
+  }
+  div:nth-child(3) {
+    text-align: right;
+  }
+  span {
+    color: #c71919;
+  }
+  div {
+    @media only screen and (min-width: 980px) and (max-width: 1350px) {
+      font-size: 26px;
+    }
+    @media only screen and (min-width: 576px) and (max-width: 979px) {
+      font-size: 22px;
+    }
+    @media only screen and (min-width: 450px) and (max-width: 575px) {
+      font-size: 20px;
+    }
+  }
+}

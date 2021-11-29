@@ -1,0 +1,44 @@
+$bgOrder: url("../../Assets/Images/bgOrder.jpg");
+.rightPanel {
+  border-radius: 5px;
+  border: 1px solid #a3742e;
+  font-family: 'Forums', cursive;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background: $bgOrder no-repeat;
+  background-size: cover;
+  .delivery {
+    background: rgba(163, 116, 46, 0.27);
+    color: #efefef;
+    text-align: center;
+  }
+  button {
+    border: none;
+    font-weight: bold;
+    &:not(:disabled):not(.disabled) {
+      background: #a3742e;
+      box-shadow: none;
+      &:hover {
+        background: white;
+        color: #a3742e;
+        border: 1px solid #a3742e;
+      }
+      &:active,
+      &.active {
+        &:focus {
+          background: red;
+          box-shadow: 0 0 0 0.2rem rgba(253, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+  .table {
+    background: white;
+    border-radius: 5px;
+    /*background: #FDC7C7;*/
+    border: 1px solid #a3742e;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  }
+  @media only screen and (max-width: 575px) {
+    margin: 10px !important;
+  }
+}

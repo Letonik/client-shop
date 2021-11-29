@@ -1,0 +1,18 @@
+$headBg: url("../../../Assets/Images/bg-head.png");
+.contain {
+  text-align: center;
+  color: #a3742e;
+  font-size: 80px;
+  font-family: 'Forums', cursive;
+  background: $headBg no-repeat;
+  background-size: cover;
+  @media only screen and (min-width: 980px) and (max-width: 1350px) {
+    font-size: 70px;
+  }
+  @media only screen and (min-width: 700px) and (max-width: 979px) {
+    font-size: 60px;
+  }
+  @media only screen and (max-width: 700px) {
+    font-size: 50px;
+  }
+}

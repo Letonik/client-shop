@@ -1,0 +1,110 @@
+
+.carousel {
+    font-family: 'Forums', cursive;
+    h1 {
+        font-size: 150px;
+        color: #a3742e;
+        background: rgba(255, 255, 255, 0.5);
+        animation-name: title;
+        animation-duration: 2.5s;
+    }
+    h3 {
+        font-size: 27px;
+        background: rgba(163, 116, 46, 0.3);
+        margin-bottom: 30px;
+        animation-name: text;
+        animation-duration: 2.5s;
+    }
+    @media only screen and (min-width: 980px) and (max-width: 1350px) {
+        h1 {
+            font-size: 120px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+    @media only screen and (min-width: 768px) and (max-width: 979px) {
+        h1 {
+            font-size: 90px;
+        }
+        h3 {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+    }
+    @media only screen and (min-width: 500px) and (max-width: 767px) {
+        h1 {
+            font-size: 60px;
+        }
+        h3 {
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    @media only screen and (max-width: 499px) {
+        h1 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 8px;
+            margin-bottom: 7px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 500px) {
+    @keyframes title {
+        0% {
+            margin-left: 1500px;
+        }
+        100% {
+            margin-left: 0px;
+        }
+    }
+    @keyframes text {
+        0% {
+            margin-left: -2500px;
+            margin-right: 2500px;
+            background: rgba(19, 206, 210, 0);
+            color: rgba(255, 255, 255, 0);
+        }
+        50% {
+            background: rgba(163, 116, 46, 0.3);
+            color: rgba(255, 255, 255, 1);
+        }
+        100% {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 499px) {
+    @keyframes title {
+        0% {
+            margin-left: 700px;
+        }
+        100% {
+            margin-left: 0px;
+        }
+    }
+    @keyframes text {
+        0% {
+            margin-left: -1200px;
+            margin-right: 1200px;
+            background: rgba(19, 206, 210, 0);
+            color: rgba(255, 255, 255, 0);
+        }
+        50% {
+            background: rgba(163, 116, 46, 0.3);
+            color: rgba(255, 255, 255, 1);
+        }
+        100% {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+
+}

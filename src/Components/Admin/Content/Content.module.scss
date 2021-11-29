@@ -1,0 +1,50 @@
+.contentAdmin {
+  font-family: 'Forums', cursive;
+  text-align: center;
+  .accHeader {
+    cursor: pointer;
+  }
+  .cardRed {
+    border: 2px solid red;
+  }
+  .cardOrange {
+    border: 2px solid orange;
+  }
+  .cardGreen {
+    border: 2px solid yellowgreen;
+  }
+  .cardRed, .cardOrange, .cardGreen {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .imageParent {
+    position: relative;
+    .image {
+      width: 100%;
+    }
+    .del {
+      position: absolute;
+      top:0;
+      right: 20px;
+      color: #efefef;
+      background: red;
+      padding: 0 5px;
+      cursor: pointer;
+    }
+  }
+  .colCarousel {
+    img {
+      width: 100%;
+    }
+    .delCarousel {
+      text-align: right;
+      span {
+        background: red;
+        color: #efefef;
+        cursor: pointer;
+        padding: 0 5px;;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.category {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  .title {
+    font-family: 'Forums', cursive;
+    font-weight: bold;
+    background: rgba(57, 56, 56, 0.7);
+    text-align: center;
+    @media only screen and (min-width: 350px) and (max-width: 575px) {
+      font-size: 15px;
+    }
+    @media only screen and (max-width: 349px) {
+      font-size: 11px;
+    }
+  }
+}

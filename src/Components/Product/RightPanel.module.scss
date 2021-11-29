@@ -1,0 +1,33 @@
+.rightPanel {
+  font-family: 'Forums', cursive;
+  button {
+    border: none;
+    &:not(:disabled):not(.disabled) {
+      background: #a3742e;
+      box-shadow: none;
+      &:hover {
+        background: #7A7A78;
+      }
+      &:active,
+      &.active {
+        &:focus {
+          background: red;
+          box-shadow: 0 0 0 0.2rem rgba(253, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+  span {
+    color: #c71919;
+  }
+  .colSelect {
+    div {
+      position: relative;
+      bottom: 24px;
+    }
+  }
+}
+.error {
+  font-size: 20px;
+  color: #c71919;
+}

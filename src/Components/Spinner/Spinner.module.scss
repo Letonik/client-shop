@@ -1,0 +1,7 @@
+.spinner {
+  text-align: center;
+  padding-top: 100px;
+  @media only screen and (max-width: 575px) {
+    padding-top: 70px;
+  }
+}

@@ -1,0 +1,82 @@
+$green: url("../../../Assets/Images/green.jpg");
+$yellow: url("../../../Assets/Images/yellow.jpg");
+.row  {
+  @media only screen and (max-width: 575px) {
+    margin: 5px;
+    h3 {
+      font-size: 15px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 15px;
+    }
+    .products {
+      margin-top: 20px;
+      .oneProduct {
+        border-top: 1px solid #cdcdc9;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  button {
+    background: #fcf5c1;
+    border: none;
+    color: #7A7A78;
+    &:hover {
+      background: #efefef;
+      border: 2px solid #fcf5c1;
+      color: #7A7A78;
+    }
+  }
+  .oneProduct {
+    margin-bottom: 10px;
+  }
+  margin: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  font-family: 'Forums', cursive;
+  position: relative;
+  img {
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  form {
+    input {
+      width: 45px;
+      height: 25px;
+    }
+  }
+  .delete {
+    color: brown;
+    cursor: pointer;
+    &:hover {
+      color: crimson;
+    }
+  }
+  .infoGreen {
+    background: $green no-repeat;
+    background-size: cover;
+  }
+  .infoYellow {
+    background: $yellow no-repeat;
+    background-size: cover;
+  }
+  .zero {
+    color: brown;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 60px;
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    margin: 0;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+  }
+}

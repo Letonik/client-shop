@@ -1,0 +1,115 @@
+.contacts {
+  .row {
+    margin: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    font-family: 'Forums', cursive;
+    img {
+      width: 100%;
+    }
+    .socialNet {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      .vk, .insta, .whatsapp {
+        width: 70px;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        img {
+          width: 50px;
+        }
+      }
+      .vk {
+        background: rgba(0, 72, 255, 0.27);
+        &:hover {
+          background: rgba(0, 72, 255, 0.50);
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+      }
+      .insta {
+        background: rgba(138, 43, 226, 0.24);
+        &:hover {
+          background: rgba(138, 43, 226, 0.50);
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+      }
+      .whatsapp {
+        background: rgba(68, 255, 47, 0.45);
+        &:hover {
+          background: rgba(68, 255, 47, 0.70);
+          box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 769px) and (max-width: 988px) {
+    h1 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
+  @media only screen and (min-width: 552px) and (max-width: 768px) {
+    .row {
+      .socialNet {
+        width: 200px;
+        height: 40px;
+        margin-top: 40px;
+        .vk, .insta, .whatsapp {
+          width: 40px;
+          padding: 5px;
+          img {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 370px) and (max-width: 482px) {
+    .row {
+      .socialNet {
+        width: 200px;
+        height: 40px;
+        margin-top: 40px;
+        .vk, .insta, .whatsapp {
+          width: 40px;
+          padding: 5px;
+          img {
+            width: 30px;
+          }
+        }
+      }
+      h1 {
+        font-size: 25px;
+      }
+      h3 {
+        font-size: 17px;
+      }
+    }
+  }
+  @media only screen and (max-width: 369px) {
+    .row {
+      .socialNet {
+        width: 120px;
+        height: 35px;
+        margin-top: 35px;
+        .vk, .insta, .whatsapp {
+          width: 35px;
+          padding: 4px;
+          img {
+            width: 27px;
+          }
+        }
+      }
+      h1 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 10px;
+      }
+    }
+  }
+}

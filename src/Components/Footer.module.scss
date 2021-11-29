@@ -1,0 +1,13 @@
+$sliderBg: url("../Assets/Images/bg-head.png");
+.footer {
+  background: $sliderBg no-repeat;
+  background-size: cover;
+  color: #a3742e;
+  .col {
+    text-align: center;
+    padding: 20px 0;
+    img {
+      width: 30px;
+    }
+  }
+}

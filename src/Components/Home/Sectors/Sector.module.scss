@@ -1,0 +1,51 @@
+.cont {
+  padding: 40px;
+  margin: auto;
+  .cols {
+    perspective-origin: 0 50%;
+    perspective: 200px;
+    transform-origin: left center;
+    padding-top: 20px;
+    position: relative;
+    animation-name: sector;
+    animation-duration: 2.5s;
+    cursor: pointer;
+    img {
+      border-radius: 2px;
+      z-index: 20;
+    }
+    p {
+      font-family: 'Forums', cursive;
+      font-size: 35px;
+      font-weight: bold;
+      position: absolute;
+      z-index: 0;
+      bottom: 40%;
+      right: 12px;
+      color: white;
+      background: rgba(163, 116, 46, 0.5);
+      padding:0 10px;
+      @media only screen and (min-width: 980px) and (max-width: 1350px) {
+        font-size: 26px;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 979px) {
+        font-size: 35px;
+      }
+      @media only screen and (max-width: 767px) {
+        font-size: 26px;
+      }
+    }
+  }
+}
+@keyframes sector {
+  0% {
+    transform: rotateY(-90deg);
+    perspective-origin: 0 50%;
+    perspective: 200px;
+  }
+  100% {
+    transform: rotateY(0deg);
+    perspective-origin: 0 0;
+    perspective: 200px;
+  }
+}

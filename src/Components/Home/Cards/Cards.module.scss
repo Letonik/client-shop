@@ -1,0 +1,46 @@
+$sliderBg: url("../../../Assets/Images/bgSlider3.jpg");
+.carouselPC, .carouselPhone {
+  margin: 30px 0;
+/*  padding: 20px 0;*/
+  background: $sliderBg no-repeat;
+  background-size: cover;
+  text-align: right;
+  font-family: 'Forums', cursive;
+  img {
+    border-radius: 5px;
+  }
+  .item {
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 10px;
+  }
+  span {
+    color: red;
+  }
+  h1 {
+    @media only screen and (min-width: 980px) and (max-width: 1350px) {
+      font-size: 28px;
+    }
+    @media only screen and (min-width: 576px) and (max-width: 979px) {
+      font-size: 24px;
+    }
+    @media only screen and (max-width: 575px) {
+      font-size: 30px;
+    }
+  }
+
+}
+@media only screen and (min-width: 769px){
+  .carouselPhone {
+    display: none;
+  }
+}
+@media only screen and (max-width: 770px){
+  .carouselPC {
+    display: none;
+  }
+}
+
+/*
+#FAC0CE*/

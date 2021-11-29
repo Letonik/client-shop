@@ -1,0 +1,22 @@
+.body {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  font-family: 'Forums', cursive;
+  span {
+    cursor: pointer;
+    color: gray;
+
+    &:hover {
+      color: #a3742e;
+    }
+  }
+
+  button {
+    background: #a3742e;
+    border: none;
+  }
+
+  .time {
+    text-align: right;
+  }
+}

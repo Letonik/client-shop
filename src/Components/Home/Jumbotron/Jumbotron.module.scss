@@ -1,0 +1,47 @@
+$slider: url("../../../Assets/Images/moda.jpg");
+$slider2: url("../../../Assets/Images/moda2.jpg");
+.jumbo {
+  background: $slider no-repeat fixed bottom;
+  background-size: cover;
+  color: #efefef;
+  height: 400px;
+  position: relative;
+  z-index: -2;
+  margin-top: 20px;
+  font-family: 'Forums', cursive;
+  font-weight: bold;
+  @media only screen and (max-width: 449px) {
+    background-size: initial;
+    background: $slider2 no-repeat fixed top;
+  }
+
+  h1, p {
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  p {
+    font-size: 25px;
+    @media only screen and (min-width: 980px) and (max-width: 1350px) {
+      font-size: 20px;
+    }
+    @media only screen and (min-width: 700px) and (max-width: 979px) {
+      font-size: 17px;
+    }
+    @media only screen and (min-width: 450px) and (max-width: 700px) {
+      font-size: 15px;
+    }
+    @media only screen and (max-width: 449px) {
+      font-size: 12px;
+    }
+  }
+}
+.overlay {
+  background-color: #000;
+  opacity: 0.5;
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  z-index: -1;
+}
